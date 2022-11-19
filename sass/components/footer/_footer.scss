@@ -1,0 +1,52 @@
+footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-items{
+    display: flex;
+    align-items: baseline;
+   }
+   
+   .footer{
+    .logo{
+        color: var(--thirdly-text-color);
+        
+    }
+    .contacts-list{
+        display: block;
+        margin-top: 9px;
+    }
+    address{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    
+        color: var(--thirdly-text-color);
+        margin-top: 20px;
+        
+    }
+    
+   }
+   
+   
+   address{
+       font-size: 14px;
+       line-height: 24px;
+       letter-spacing: 0.03em;
+   
+       color: var(--thirdly-text-color);
+       margin-top: 20px;
+       
+   }
+   
+  
+   .footer .contact-item:last-child{
+      margin-left: 0;
+      margin-top: 9px; 
+   }
+   
+   .footer-contacts {
+    height: 81px;
+    width: 231px;
+       margin-right: 70px;
+     }

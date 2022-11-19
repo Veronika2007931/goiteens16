@@ -1,0 +1,19 @@
+.customers-list{
+    display: flex;
+}
+.customers-link{
+    @include centerFlex(inline-flex);
+    width: 170px;
+    border: 1px solid var(--svg);
+    border-radius: 4px;
+    color: var(--svg);
+
+flex-direction: row;
+&:hover,
+&:focus{
+    border: 1px solid var(--accent-color);   
+}
+
+}
+
+
