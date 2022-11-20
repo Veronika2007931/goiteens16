@@ -1,8 +1,50 @@
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   border: 0;
+   margin: -1px;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ } 
+
 .fetures{
     display: flex;
     justify-content: space-between;
     }
     
-    .fetures-item{
+.fetures-item{
        width: 270px;
     }
+
+.features-icon{
+   width: 70px;
+   height: 70px;
+}
+
+.icon-box{
+   width: 270px;
+   background-color: #F5F4FA;
+   padding: 25px 100px;
+   margin-bottom: 30px;
+   border-radius: 4px;
+}
+
+.features-title{
+   font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+.feature-text{
+   font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+
+}

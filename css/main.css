@@ -127,8 +127,11 @@ nav {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.svg-icon {
-  border-right: 10px;
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nav-link:hover,
@@ -173,6 +176,11 @@ section {
 }
 
 .hero-title {
+  left: 452px;
+  width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -359,6 +367,17 @@ section {
   color: var(--thirdly-text-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .fetures {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,6 +389,45 @@ section {
 
 .fetures-item {
   width: 270px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-box {
+  width: 270px;
+  background-color: #F5F4FA;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.what-we-do {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .thumbwhatwedo {
@@ -423,6 +481,15 @@ section {
 .team-members img {
   height: 260px;
   width: 270px;
+}
+
+.our-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .sosialmedia {
@@ -494,18 +561,54 @@ section {
   border: 1px solid var(--accent-color);
 }
 
-/* Hero section */
 footer {
-  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-/* Модальне вікно */
-/* Секція особливості */
-/* Секція чим ми займаємось */
-/* наша команда */
-/* Постійні клієнти */
-/* footer */
-/* Приєднуйтесь */
+.footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer .logo {
+  color: var(--thirdly-text-color);
+}
+.footer .contacts-list {
+  display: block;
+  margin-top: 9px;
+}
+.footer address {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--thirdly-text-color);
+  margin-top: 20px;
+}
+
+address {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--thirdly-text-color);
+  margin-top: 20px;
+}
+
+.footer .contact-item:last-child {
+  margin-left: 0;
+  margin-top: 9px;
+}
+
+.footer-contacts {
+  height: 81px;
+  width: 231px;
+  margin-right: 70px;
+}
+
 .join-networks {
   color: var(--thirdly-text-color);
   font-size: 14px;
@@ -539,6 +642,9 @@ footer {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.networks-link:hover, .networks-link:focus {
+  background-color: #2196F3;
+}
 
 .networks-link:not(:first-child) {
   margin-left: 10px;
@@ -548,11 +654,6 @@ footer {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.networks-link:hover,
-.networks-link:focus {
-  background-color: #2196F3;
 }
 
 .footerform {
@@ -577,30 +678,25 @@ footer {
   margin-top: 20px;
   outline: none;
 }
-
 .footer-input::-webkit-input-placeholder {
   position: relative;
-  left: 5px;
+  left: 17px;
 }
-
 .footer-input::-moz-placeholder {
   position: relative;
-  left: 5px;
+  left: 17px;
 }
-
 .footer-input:-ms-input-placeholder {
   position: relative;
-  left: 5px;
+  left: 17px;
 }
-
 .footer-input::-ms-input-placeholder {
   position: relative;
-  left: 5px;
+  left: 17px;
 }
-
 .footer-input::placeholder {
   position: relative;
-  left: 5px;
+  left: 17px;
 }
 
 .footerline {
@@ -611,26 +707,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-input::-webkit-input-placeholder {
-  left: 17px;
-}
-
-input::-moz-placeholder {
-  left: 17px;
-}
-
-input:-ms-input-placeholder {
-  left: 17px;
-}
-
-input::-ms-input-placeholder {
-  left: 17px;
-}
-
-input::placeholder {
-  left: 17px;
 }
 
 .footer-button {
@@ -653,6 +729,17 @@ input::placeholder {
   margin-top: 20px;
   margin-left: 10px;
 }
+.footer-button::after {
+  content: "";
+  background-image: url(../images/yflf/iconsend.svg);
+  color: var(--thirdly-text-color);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+  left: 4px;
+}
 
 .send-icon {
   fill: var(--thirdly-text-color);
@@ -667,19 +754,6 @@ input::placeholder {
           align-items: center;
 }
 
-.footer-button::after {
-  content: "";
-  background-image: url(../images/yflf/iconsend.svg);
-  color: var(--thirdly-text-color);
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  top: 6px;
-  left: 4px;
-}
-
-/* кнопки фільтру */
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,16 +782,13 @@ input::placeholder {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   background: var(--accent-color);
   color: var(--thirdly-text-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* приклади робіт */
 .examples {
   margin: -15px;
   display: -webkit-box;
@@ -732,7 +803,6 @@ input::placeholder {
   margin: 15px;
 }
 
-/* оверлей */
 .thumb {
   position: relative;
   overflow: hidden;
@@ -753,17 +823,9 @@ input::placeholder {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.examples-link:hover .overlay,
-.examples-link:focus .overlay {
+.examples-link:hover .overlay, .examples-link:focus .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.examples-link:hover .link-text,
-.examples-link:focus .link-text {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .overlay-text {
@@ -778,4 +840,24 @@ input::placeholder {
   border-left: 1px solid var(--card-border-line);
   border-right: 1px solid var(--card-border-line);
   border-bottom: 1px solid var(--card-border-line);
-}/*# sourceMappingURL=main.css.map */
+}
+.examples-link:hover .link-text, .examples-link:focus .link-text {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Hero section */
+footer {
+  background-color: var(--background-color);
+}
+
+/* Модальне вікно */
+/* Секція особливості */
+/* Секція чим ми займаємось */
+/* наша команда */
+/* Постійні клієнти */
+/* footer */
+/* Приєднуйтесь */
+/* кнопки фільтру */
+/* приклади робіт */
+/* оверлей *//*# sourceMappingURL=main.css.map */
