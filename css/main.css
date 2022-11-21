@@ -48,7 +48,7 @@ img {
   height: auto;
 }
 
-.section, .hero, .header {
+.section, .footer, .hero, .header {
   width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -560,7 +560,7 @@ section {
   border: 1px solid var(--accent-color);
 }
 
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -574,12 +574,11 @@ footer {
           align-items: baseline;
 }
 
+.footer .networks {
+  margin-top: 20px;
+}
 .footer .logo {
   color: var(--thirdly-text-color);
-}
-.footer .contacts-list {
-  display: block;
-  margin-top: 9px;
 }
 .footer address {
   font-size: 14px;
@@ -588,24 +587,13 @@ footer {
   color: var(--thirdly-text-color);
   margin-top: 20px;
 }
-
-address {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--thirdly-text-color);
-  margin-top: 20px;
+.footer .contacts-list {
+  display: block;
+  margin-top: 9px;
 }
-
 .footer .contact-item:last-child {
   margin-left: 0;
   margin-top: 9px;
-}
-
-.footer-contacts {
-  height: 81px;
-  width: 231px;
-  margin-right: 70px;
 }
 
 .join-networks {
@@ -638,7 +626,6 @@ address {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
-  margin-left: 10px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -646,14 +633,14 @@ address {
   background-color: #2196F3;
 }
 
-.networks-link:not(:first-child) {
-  margin-left: 10px;
-}
-
 .networks-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.networks-item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .footerform {
